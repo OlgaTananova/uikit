@@ -96,8 +96,7 @@ $transitionTimingFunction: ease-in-out;
             }
 
             &#{$block}_style {
-                &_default,
-                &_rounded {
+                &_default {
                     border-radius: var(--yc-border-radius-xs);
 
                     & #{$block}__addon {
@@ -106,6 +105,9 @@ $transitionTimingFunction: ease-in-out;
                             --yc-button-border-radius: var(--yc-border-radius-xs);
                         }
                     }
+                }
+                &_rounded {
+                    border-radius: 20px;
                 }
             }
         }
@@ -118,7 +120,7 @@ $transitionTimingFunction: ease-in-out;
                 margin: 0 10px;
             }
 
-            & #{$block}__icon {
+            & #{$block}__addon {
                 width: 24px;
                 height: 24px;
             }
@@ -132,8 +134,7 @@ $transitionTimingFunction: ease-in-out;
             }
 
             &#{$block}_style {
-                &_default,
-                &_rounded {
+                &_default {
                     border-radius: var(--yc-border-radius-s);
 
                     & #{$block}__addon {
@@ -142,6 +143,9 @@ $transitionTimingFunction: ease-in-out;
                             --yc-button-border-radius: var(--yc-border-radius-s);
                         }
                     }
+                }
+                &_rounded {
+                    border-radius: 24px;
                 }
             }
         }
